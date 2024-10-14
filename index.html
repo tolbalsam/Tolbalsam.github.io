@@ -27,30 +27,39 @@
             height: auto;
             display: block;
         }
-        h1, h2, h3 {
-            color: #ff0000;
+        h1 {
+            color: #ffffff;
+           font-family: Cambria,"Times New Roman",serif;
+        }
+            h2 {
+            color: #307DC5;
+           font-family: Cambria,"Times New Roman",serif;
+        }
+    
+            h3 {
+            color: #000000;
            font-family: Cambria,"Times New Roman",serif;
         }
 
         /* Header and Navigation */
         header {
-            background: linear-gradient(90deg, #2980b9, #2c3e50);
+            background-image: url("judul.jpg");
             color: #fff;
-            padding: 20px 0;
+            padding: 50px 0;
             text-align: center;
         }
         nav {
-            background-color: #3498db;
+            background-color: #00ff00;
             padding: 10px 0;
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 100px;
         }
         nav a {
             color: #fff;
             font-weight: bold;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 25px;
         }
         nav a:hover {
             background-color: #1abc9c;
@@ -87,7 +96,7 @@
         .infografis {
             display: flex;
             justify-content: space-between;
-            margin-top: 30px;
+            margin-top: 35px;
             gap: 20px;
         }
         .infografis div {
@@ -99,7 +108,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .infografis div:hover {
-            transform: translateY(-10px);
+            transform: translateY(-15px);
             box-shadow: 0 15px 16px rgba(0, 0, 0, 0.15);
         }
         .infografis h3 {
@@ -120,14 +129,14 @@
         /* Responsive Layout */
         @media (max-width: 768px) {
             nav {
-                flex-direction: column;
+                flex-direction: vertical;
                 gap: 2px;
                 background-color: #000000;
             }
 
             .infografis {
                 flex-direction: column;
-                gap: 20px;
+                gap: 30px;
             }
 
             .infografis div {
@@ -148,17 +157,19 @@
 
     <!-- Header and Navigation -->
     <header>
-        <h1>Mading Tol Balikpapan-Samarinda dan Demokrasi</h1>
+        <h4>Mading Tol Balikpapan-Samarinda dan Demokrasi</h1>
     </header>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">Tentang Proyek</a>
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#kontak"> Kontak </a>
+         <a href="#dewan">Demokrasi</a>
     </nav>
 
     <!-- Home Page Section -->
     <section id="home">
-        <mark><h1>Selamat Datang di Mading Kami</h2></mark>
+        <mark><h2>Selamat Datang di Mading Kami</h2></mark>
         <p><b>Jalan tol Balikpapan-Samarinda adalah proyek infrastruktur penting yang menghubungkan kota utama di Kalimantan Timur. Jalan tol ini meningkatkan akses transportasi dan mempromosikan pembangunan berkelanjutan.</b></p>
         <div class="main-image">
             <img src="tol.jpeg" alt="Gambar Jalan Tol">
@@ -167,7 +178,7 @@
 
     <!-- About Project Section -->
     <section id="about">
-        <h2>Tentang Proyek Jalan Tol</h2>
+        <h2>" Tentang Proyek Jalan Tol "</h2>
         <p>Proyek Jalan Tol Balikpapan-Samarinda bertujuan untuk meningkatkan konektivitas, mempercepat pertumbuhan ekonomi, dan mendukung pengembangan ibu kota negara baru di Kalimantan Timur. Dengan panjang lebih dari 99 kilometer, jalan tol ini menjadi proyek penting dalam modernisasi infrastruktur di Indonesia.</p>
 
         <!-- Infographics -->
@@ -184,16 +195,53 @@
             </div>
             <div>
                 <h3>Perluasan Pasar Tenaga Kerja</h3>
+                <img src="sarkoni.jpeg">Pemberdayaan Masyarakat dalam Proyek Perawatan
                 <p>Perluasan Pasar Tenaga Kerja
 Jalan tol ini juga memperluas akses tenaga kerja, memungkinkan orang-orang dari Balikpapan bekerja di Samarinda, dan sebaliknya. Dengan konektivitas yang lebih baik, penduduk bisa lebih mudah mengakses peluang pekerjaan di daerah lain.</p>
             </div>
         </div>
     </section>
+<section id="dewan">
+        <h2> " Tentang Demokrasi keterlibatan warga yang dapat Berpasitipasi "</h2>
+        <p>Peran warga dalam perawatan jalan tol Balikpapan-Samarinda seiring adanya Ibu Kota Nusantara (IKN) dapat terlihat melalui beberapa hal:
+</p>
 
+        <!-- Infographics -->
+        <div class="infografis">
+            <div>
+                <h3>Kepedulian Terhadap Kebersihan dan Keamanan</h3>
+                <img src="saroma.jpeg" width="100%" >
+                <p>Warga yang menggunakan jalan tol bisa terlibat langsung dengan menjaga kebersihan dan keamanan jalan. Ini bisa diwujudkan dengan tidak membuang sampah sembarangan, mematuhi aturan lalu lintas, dan melaporkan jika ada kerusakan di sepanjang jalan tol. Kesadaran warga ini akan membantu menjaga kualitas infrastruktur.</p>
+            </div>
+            <div>
+                <h3>Pelaporan Kerusakan Infrastruktur</h3>
+                <img src="download.jpeg" width="100%">
+                <p>Warga juga dapat berperan aktif dalam melaporkan kerusakan atau potensi bahaya yang ditemui di jalan tol. Hal ini sangat penting mengingat jalan tol Balikpapan-Samarinda merupakan jalur utama yang mendukung aktivitas menuju IKN, sehingga perawatan dan keamanan jalur ini menjadi prioritas.</p>
+            </div>
+            <div>
+                <h3>Pemberdayaan Masyarakat dalam Proyek Perawatan</h3>
+                <img src="lora.jpeg" width="100%">
+                <p>Perusahaan pengelola jalan tol dan pemerintah dapat melibatkan warga dalam proyek perawatan jalan tol, seperti program kerja lokal untuk membersihkan jalan atau memelihara fasilitas di sepanjang tol. Ini menciptakan kesempatan kerja dan mendukung keberlanjutan infrastruktur.</p>
+            </div>
+        </div>
+    </section>
+        <section id="kontak">
+        <h2> Hubungi Kontak Saya Di Bawah Ini! </h2>
+            <div class="infografis">
+                <div>
+                    <a href="https://wa.me/+6285942843190">
+                <img src="wa.jpeg" width="100%"> </a>
+                              </div>
+                                <div>
+                    <a href="https://www.instagram.com/abiyyss?igsh=MTRleWhlbWFvMjJyOA==">
+                <img src="ig.jpeg" width="100%"> </a>
+                              </div>
+            </div>
+        </section>"
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Mading Tol Balikpapan-Samarinda dan Demokrasi. Programed by Abiyy.</p>
     </footer>
-
+    
 </body>
 </html>
