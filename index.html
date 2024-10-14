@@ -66,8 +66,7 @@
             border-radius: 10px;
         }
         h2 {
-            margin-bottom: px;
-            max-width: 100%;
+            margin-bottom: 20px;
             font-size: 28px;
         }
         p {
@@ -88,6 +87,7 @@
             display: flex;
             justify-content: space-between;
             margin-top: 30px;
+            gap: 20px;
         }
         .infografis div {
             background-color: #ecf0f1;
@@ -114,6 +114,31 @@
             padding: 20px;
             position: relative;
             width: 100%;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .infografis {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .infografis div {
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
