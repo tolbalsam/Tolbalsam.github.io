@@ -15,9 +15,39 @@
         body {
             font-family: 'Helvetica Neue', sans-serif;
             line-height: 1.6;
+             margin: 0;
+      padding: 0;
             background-color: #ffffff;
             color: #333;
         }
+            .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .box {
+      width: 90%;
+      max-width: 1200px;
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Media query untuk layar lebih besar */
+    @media (min-width: 768px) {
+      .box {
+        width: 80%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .box {
+        width: 70%;
+      }
+    }
         a {
             text-decoration: none;
             color: inherit;
