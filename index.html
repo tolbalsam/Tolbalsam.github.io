@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=0.9">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mading Tol Balikpapan-Samarinda dan Demokrasi</title>
+  
     <style>
         /* Global Styles */
         * {
@@ -72,12 +73,7 @@
         }
 
         /* Header and Navigation */
-        header {
-            background-image: url("judul.jpg");
-            color: #fff;
-            padding: 50px 0;
-            text-align: center;
-        }
+
         nav {
             background-color: #000000;
             padding: 10px 0;
@@ -104,10 +100,6 @@
             box-shadow: 0 8px 10px rgba(0,0 , 9, 9);
             margin-bottom: 60px;
             border-radius: 20px;
-        }
-        h2 {
-            margin-bottom: 20px;
-            font-size: 28px;
         }
         p {
             margin-bottom: 20px;
@@ -153,7 +145,8 @@
             text-align: center;
             padding: 20px;
             position: relative;
-            width: 100%;
+           max-width: 100%;
+          
         }
 
         /* Responsive Layout */
@@ -172,34 +165,279 @@
             .infografis div {
                 width: 100%;
             }
+            
+            h1 {
+                font-size: 25px;
+                color: #ffffff;
+            }
 
             h2 {
                 font-size: 24px;
+                
             }
 
             p {
                 font-size: 16px;
             }
         }
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+html,body{
+  margin:0;
+  height:100%;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+a{
+  text-decoration:none
+}
+.header{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:250px;
+  max-height:550px;
+  min-width:300px;
+  color:#eee;
+}
+.header:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0.12) 40%,rgba(27,32,48,1) 100%);
+}
+.header:before{
+  content:"";
+  width:100%;
+  height:200%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); backface-visibility: hidden;
+  scale(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) 50% 0 no-repeat;
+  background-size:100%;
+  background-attachment:fixed;
+  animation: grow 360s  linear 10ms infinite;
+  transition:all 0.4s ease-in-out;
+  z-index:-2
+}
+.header a{
+  color:#eee
+}
+.menu{
+  display:block;
+  width:40px;
+  height:30px;
+  border:2px solid #fff;
+  border-radius:3px;
+  position:absolute;
+  right:20px;
+  top:20px;
+  text-decoration:none
+}
+.menu:after{
+  content:"";
+  display:block;
+  width:20px;
+  height:3px;
+  background:#fff;
+  position:absolute;
+  margin:0 auto;
+  top:5px;
+  left:0;
+  right:0;
+  box-shadow:0 8px, 0 16px
+}
+.logo{
+  border:2px solid #fff;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  align-content:center;
+  margin:20px;
+  padding:0px 10px;
+  font-weight:900;
+  font-size:1.1em;
+  line-height:1;
+  box-sizing:border-box;
+  height:40px
+}
+.sides, .info{
+  flex: 0 0 auto;
+  width:50%
+}
+.info{
+  width:100%;
+  padding:30% 10% 0 10%;
+  text-align: center;
+  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+}
+.author{
+  display:inline-block;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:url(https://i.imgur.com/6DLCsZcb.jpg) center no-repeat;
+  background-size:cover;
+  box-shadow:0 2px 3px rgba(0,0,0,0.3);
+  margin-bottom:3px
+}
+.info h4, .meta{
+  font-size:0.7em
+}
+.meta{
+  font-style:italic;
+}
+@keyframes grow{
+  0% { transform: scale(1) translateY(0px)}
+  50% { transform: scale(1.2) translateY(-400px)}
+}
+.content{  
+  padding:5% 10%;
+  text-align:justify
+}
+.btn{
+  color:#333;
+  border:2px solid;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-block;
+  padding:5px 10px;
+  font-weight:600
+}
+
+.twtr{
+  margin-top:100px
+}.btn.twtr:after{content:"\1F426";padding-left:5px}
     </style>
 </head>
 <body>
+    <div class="header">
+  <div class="sides">
+  </div>
+  <div class="info">
+    <h1>Tol Balikpapan-Samarinda dan Demokrasi</h1>
+    <div class="meta">
+    </div>
+  </div>
+</div>
+    <link rel="stylesheet" href="./style.css">
+
+         
+
+    <!-- ===== Boxicons CSS ===== -->
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <title>Responsive navigation menu bar</title>
+
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="nav-bar">
+
+      <i class="bx bx-menu sidebarOpen"></i>
+
+      <span class="logo navLogo"><a href="#">Abiyyweb</a></span>
+
+
+
+      <div class="menu">
+
+        <div class="logo-toggle">
+
+          <span class="logo"><a href="#">Abiyyweb</a></span>
+
+          <i class="bx bx-x siderbarClose"></i>
+
+        </div>
+
+
+
+        <ul class="nav-links">
+
+          <li><a href="#home">Beranda</a></li>
+
+          <li><a href="#about">Tentang</a></li>
+
+          <li><a href="#dewan">Demokrasi</a></li>
+
+          <li><a href="#kelompok">Kelompok</a></li>
+
+          <li><a href="#kontak">Contact</a></li>
+
+        </ul>
+
+      </div>
+
+
+
+      <div class="darkLight-searchBox">
+
+        <div class="dark-light">
+
+          <i class="bx bx-moon moon"></i>
+
+          <i class="bx bx-sun sun"></i>
+
+        </div>
+
+
+
+        <div class="searchBox">
+
+          <div class="searchToggle">
+
+            <i class="bx bx-x cancel"></i>
+
+            <i class="bx bx-search search"></i>
+
+          </div>
+
+
+
+          <div class="search-field">
+
+            <input type="text" placeholder="Search..." />
+
+            <i class="bx bx-search"></i>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <script src="script.js"></script>
 
     <!-- Header and Navigation -->
-    <header>
-        <h4>Mading Tol Balikpapan-Samarinda dan Demokrasi</h1>
-    </header>
-
-    <nav>
-        <a href="#home">Beranda</a>
-        <a href="#about">Tentang</a>
-        <a href="#kontak"> Kontak </a>
-         <a href="#dewan">Demokrasi</a>
-    </nav>
 
     <!-- Home Page Section -->
     <section id="home">
-        <mark><h2>Selamat Datang di Mading Kami</h2></mark>
+        <mark><h2>Pendahuluan</h1></mark>
         <p><b>Jalan tol Balikpapan-Samarinda adalah proyek infrastruktur penting yang menghubungkan kota utama di Kalimantan Timur. Jalan tol ini meningkatkan akses transportasi dan mempromosikan pembangunan berkelanjutan.</b></p>
         <div class="main-image">
             <img src="tol.jpeg" alt="Gambar Jalan Tol">
@@ -258,7 +496,18 @@
                 <p>Perusahaan pengelola jalan tol dan pemerintah dapat melibatkan warga dalam proyek perawatan jalan tol, seperti program kerja lokal untuk membersihkan jalan atau memelihara fasilitas di sepanjang tol. Ini menciptakan kesempatan kerja dan mendukung keberlanjutan infrastruktur.</p>
             </div>
         </div>
+    
     </section>
+    <section>
+            <h2>"demokrasi keterlibatan warga "</h2>
+        <p><b>Warga dapat berperan aktif dalam memberi feedback melalui Google Form di bawah ini, yang memudahkan untuk melaporkan kondisi jalan tol secara langsung dan membantu perbaikan lebih cepat serta efisien.</b></p>
+
+        <!-- Infographics -->
+        <div class="infografis">
+            <div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScbmI_vtTO-gb5PMG8oQ12Lb0AOFdfZfC4s7UDcqsDrpwD7Vg/viewform?usp=pp_url"> <h2>>>> KLIK & ISI DI SINI! <<<</h2>                          </a> </div>
+               <p><em>Google Form tersebut akan diserahkan kepada pihak berwenang yang bertanggung jawab atas pengelolaan dan pemeliharaan jalan tol, seperti Dinas Pekerjaan Umum, pengelola jalan tol, atau instansi terkait lainnya. Mereka akan meninjau feedback dari warga dan mengambil tindakan yang diperlukan untuk memperbaiki kondisi jalan.</em></p>            
+        </section>
         <section id="kontak">
         <h2> Hubungi Kontak Saya Di Bawah Ini! </h2>
             <div class="infografis">
@@ -276,7 +525,7 @@
                 </div>
             </div>
         </section>
-    <section>
+<section>
             <h2>" Kelompok 5 "</h2>
         <p><b>Terimakasih telah berpartisipasi dalam pengerjaan proyek p5, kelompok 5 beranggota kan 6 orang , berikut list anggota yang telah berpartisipasi :</b></p>
 
@@ -321,4 +570,4 @@
     </footer>
     
 </body>
-</html>
+                                                                                                                                                                                                                                  </html>
